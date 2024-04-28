@@ -1,0 +1,18 @@
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+Aadharid = int(input("Enter your aadhar number: "))
+if (age >= 18):
+print("You are eligible for vote.")
+choice = input("Enter your party to vote among BJP , Congress , RJD , TMC and NOTA: ")
+if(choice == "BJP"):
+print("BJP")
+elif(Choice == "Congress"):
+print("Congress")
+elif(Choice == "RJD"):
+print("RJD")
+elif(Choice=="TMC"):
+print("TMC")
+else:
+print("Nota")
+else:
+print("You are not eligible for vote.")
