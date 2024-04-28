@@ -1,0 +1,21 @@
+import random as r
+while (True):
+    a = r.choice(['rock', 'paper', 'scissor'])
+    b = input("Enter your choice for 'rock, paper, scissor': ")
+    if ((a=='rock' and b=='paper') or (a=='paper' and b=='scissor') or (a=='scissor' and b=='rock')):
+        print("You won")
+        print("Computer's choice was:", a)
+    elif (b == a):
+        print("Match draw")
+        print("Computer's choice was:", a)
+    else:
+        print("You Lose")
+        print("Computer's choice was:", a)
+    print("\n")
+    print("Enter yes for continue and no for exist")
+    choice = input("Enter your choice: ")
+    if (choice == 'yes'):
+        continue
+    else:
+        break                 
+
