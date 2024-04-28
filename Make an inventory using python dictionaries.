@@ -1,0 +1,34 @@
+inventory={}
+while True:
+    print("Enter your choice to add or remove or check availability or exit:")
+    ch=input("Add | Remove | Check | Exit :")
+    if ch=='Add' or ch=='add':
+        key=input("Enter product name:")
+        value=int(input("Enter quantity:"))
+        if key in inventory:
+            inventory [key]+=value
+        else:
+            inventory [key]=value
+    elif ch=='Remove' or ch=='remove':
+        key=input("Enter product name:")
+        value=int(input("Enter quantity you want to remove :"))
+        if key in inventory and inventory [key]> (value-1):
+            inventory [key]-=value
+        elif key in inventory and inventory [key] <value:
+            print ("There are only ", inventory [key]," left in inventory")
+        else:
+            print("No item with this name found")
+    elif ch=='Check' or ch=='check':
+        key=input("Enter product name:")
+        value=int(input("Enter quantity to check availability :"))
+        if key in inventory and inventory [key]>=value:
+            print("Product is available in required quantity", key, '', inventory [key])
+        elif key in inventory and inventory [key] <value:
+            print("Product is present but available quantity is", inventory [key])
+        else:
+            print("Product is not available")
+    elif ch=='Exit' or ch=='exit':
+        break
+    else:
+        print("Invalid input, proceed again ")
+
