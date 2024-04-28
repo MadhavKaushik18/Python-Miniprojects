@@ -1,0 +1,17 @@
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+choice = input("Enter your choice as add,subtract,multiply and division : ")
+if (choice == 'add'):
+c = a + b
+print("The addition of your numbers is:", c)
+elif (choice == 'subtract'):
+c = a - b
+print("The subtraction of your numbers is:", c)
+elif (choice == 'multiply'):
+c = a * b
+print("The multiplication of your numbers is:", c)
+elif (choice == 'division'):
+c = a // b
+print("The division of your numbers is:", c)
+else:
+print("Invalid Choice")
