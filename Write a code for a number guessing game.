@@ -1,0 +1,14 @@
+
+import random as r
+n = int(input("Enter a range: "))
+a= r.randrange(1, n)
+b = int(input("Enter Your number: "))
+
+if (b == 0):
+    print("Game Over, player quit the game")
+elif (b == a):
+    print("Congratulations! you are right,the random number was:", a)
+else:
+    print("Better luck next time")
+
+
