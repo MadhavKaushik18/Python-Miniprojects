@@ -1,0 +1,26 @@
+import random as r
+i=1
+s1=s2= 0
+while (i < 7):
+    c = r.randint(1, 6)
+    y = int(input("Enter a number between 1 to 6: "))
+    choice = input("If you quit,type 'yes' otherwise type 'no': ")
+    s1 += c
+    s2 += y
+    if (choice == 'no'):
+        continue
+    elif (choice == "yes"):
+        break
+    else:
+        print("Wrong choice")
+        break
+
+print("\n")
+print("Your score is:", s2)
+print("The computer's score is:", s1)
+print("\n")
+if (s1 > s2):
+    print("computer has won with a score of:", s1)
+else:
+    print("You have won with a score of:", s2)
+
